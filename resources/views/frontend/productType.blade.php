@@ -68,12 +68,12 @@
         </div>
         <div class="container-fluid row mid">
             <div class="col-lg-3">
-                <img src="img/icon1.jpg">
+                <img src="fontend/img/icon1.jpg">
                 <p class="p-fist">Vận chuyển miễn phí</p>
                 <p>Với đơn hàng > 600.000đ</p>
             </div>
             <div class="col-lg-3">
-                <img src="img/icon2 (1).jpg">
+                <img src="fontend/img/icon2 (1).jpg">
                 <p class="p-fist">Chất lượng đảm bảo</p>
                 <p>Hàng chính hãng</p>
             </div>
@@ -83,7 +83,7 @@
                 <p>Trong vòng 15 ngày</p>
             </div>
             <div class="col-lg-3">
-                <img src="img/icon4.jpg">
+                <img src="fontend/img/icon4.jpg">
                 <p class="p-fist">Hỗ trợ miễn phí</p>
                 <p>Từ : 6h-12h</p>
             </div>
@@ -101,15 +101,15 @@
                     <p>Chúng Tôi Cần tìm đối tác tại Miền Bắc</p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="img/tb-bct.png">
-                    <img src="img/160085386_127178059286266_5871978463262153046_n.png">
+                    <img src="fontend/img/tb-bct.png">
+                    <img src="fontend/img/160085386_127178059286266_5871978463262153046_n.png">
                 </div>
             </div>
         </div>
     </div>
 
     
-    <script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/bootstrap.js"></script>  
+    <script src="fontend/js/jquery-3.5.1.min.js"></script>
+	<script src="fontend/js/bootstrap.js"></script>  
 </body>
 </html>

@@ -81,11 +81,11 @@
                 <div class="col-lg-5"></div>
             </div>
             <div class="row">
-                @foreach($product_new as $pro_new)
+                @foreach($product_popular as $pro_popular)
                 <div class="col-lg-3">
-                    <a href="detail.html"><img src="fontend/img/{{$pro_new->images}}"></a>
-                    <a href="detail.html"><p class="index-tensp">{{$pro_new->name}}</p></a>
-                    <p class="gia-sp">{{$pro_new->price}}</p>
+                    <a href="detail.html"><img src="fontend/img/{{$pro_popular->images}}"></a>
+                    <a href="detail.html"><p class="index-tensp">{{$pro_popular->name}}</p></a>
+                    <p class="gia-sp">{{$pro_popular->price}}</p>
                 </div>
                @endforeach
                
@@ -100,26 +100,13 @@
                 <div class="col-lg-5"></div>
             </div>
             <div class="row">
+            @foreach($product_new as $pro_new)
                 <div class="col-lg-3">
-                    <a href="#"><img src="img/da-18-600x400.jpg"></a>
-                    <a href="#"><p class="index-tensp">Gạch không nung</p></a>
-                    <p class="gia-sp">350.000đ</p>
+                    <a href="#"><img src="fontend/img/{{$pro_new->images}}"></a>
+                    <a href="#"><p class="index-tensp">{{$pro_new->name}}</p></a>
+                    <p class="gia-sp">{{$pro_new->price}}</p>
                 </div>
-                <div class="col-lg-3">
-                    <a href="#"><img src="img/da-18-600x400.jpg"></a>
-                    <a href="#"><p class="index-tensp">Gạch không nung</p></a>
-                    <p class="gia-sp">350.000đ</p>
-                </div>
-                <div class="col-lg-3">
-                    <a href="#"><img src="img/da-18-600x400.jpg"></a>
-                    <a href="#"><p class="index-tensp">Gạch không nung</p></a>
-                    <p class="gia-sp">350.000đ</p>
-                </div>
-                <div class="col-lg-3">
-                    <a href="#"><img src="img/da-18-600x400.jpg"></a>
-                    <a href="#"><p class="index-tensp">Gạch không nung</p></a>
-                    <p class="gia-sp">350.000đ</p>
-                </div>
+            @endforeach
             </div>
         </div>
     </div><!--end phần nội dung-->\
@@ -130,22 +117,22 @@
         </div>
         <div class="container-fluid row mid">
             <div class="col-lg-3">
-                <img src="img/icon1.jpg">
+                <img src="fontend/img/icon1.jpg">
                 <p class="p-fist">Vận chuyển miễn phí</p>
                 <p>Với đơn hàng > 600.000đ</p>
             </div>
             <div class="col-lg-3">
-                <img src="img/icon2 (1).jpg">
+                <img src="fontend/img/icon2 (1).jpg">
                 <p class="p-fist">Chất lượng đảm bảo</p>
                 <p>Hàng chính hãng</p>
             </div>
             <div class="col-lg-3">
-                <img src="img/icon3.jpg">
+                <img src="fontend/img/icon3.jpg">
                 <p class="p-fist">Đổi trả miễn phí</p>
                 <p>Trong vòng 15 ngày</p>
             </div>
             <div class="col-lg-3">
-                <img src="img/icon4.jpg">
+                <img src="fontend/img/icon4.jpg">
                 <p class="p-fist">Hỗ trợ miễn phí</p>
                 <p>Từ : 6h-12h</p>
             </div>
@@ -163,8 +150,8 @@
                     <p>Chúng Tôi Cần tìm đối tác tại Miền Bắc</p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="img/tb-bct.png">
-                    <img src="img/160085386_127178059286266_5871978463262153046_n.png">
+                    <img src="fontend/img/tb-bct.png">
+                    <img src="fontend/img/160085386_127178059286266_5871978463262153046_n.png">
                 </div>
             </div>
         </div>

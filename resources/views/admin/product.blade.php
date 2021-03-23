@@ -55,9 +55,23 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
+                    <strong>Hình ảnh</strong>
+                    <input type="file" name="image" class="form-control" placeholder="Nhập ảnh sản phẩm"
+                        value="{{$product->image}}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Số lượng</strong>
+                    <input type="number" name="quantity" class="form-control" placeholder="Nhập số lượng"
+                        value="{{$product->quantity}}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
                     <strong>Danh mục</strong>
                     <select class="form-control" value="" name="category_id" id="">
-                                      <option value="">---</option>
+                                
                                       @foreach($category as $cate)
                                        <option value="{{$cate->id}}">{{$cate->name}}</option>
                                      @endforeach
@@ -66,7 +80,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Cập nhật</button>
-                <button type="submit" class="btn btn-danger">Trở lại</button>
+                <a href="{{route('admin.list.product')}}" class="btn btn-danger">Trở Lại</a>
             </div>
         </div>
 

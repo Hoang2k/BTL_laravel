@@ -71,7 +71,7 @@
                                     <td data-title ="Giá">{{$pro->price_sale}}</td>
                                     <td data-title="Mô Tả">{{$pro->description}}</td>
                                     <td data-title="Danh Mục">{{$pro->category_id}}</td>
-                                    <td data-title="Hình Ảnh"></td>
+                                    <td data-title="Hình Ảnh">{{$pro->images}}</td>
                                     <td data-title="Tác Vụ">
                                         <a class="btn btn-primary" href="{{route('getProduct',['id'=>$pro->id])}}"  >Sửa</a>
                                         <a class="btn btn-danger" href="{{route('delete.product',['id'=>$pro->id])}}">Xóa</a>
@@ -110,8 +110,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="">Hình Ảnh<span class="text-danger">(*)</span></label>
-                                        <input type="file" name="code" value="" 
-                                               id="code" class="form-control"
+                                        <input type="file" name="image" value="" 
+                                               id="image" class="form-control"
                                                placeholder="Chọn Hỉnh Ảnh">
                                     </div>
                                     <div class="form-group">

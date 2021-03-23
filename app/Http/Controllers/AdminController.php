@@ -29,11 +29,24 @@ class AdminController extends Controller
 
     }
     public function updateProduct(Request $request){
+        $request->validate([
+            'name'=>'required|min:4|',
+            'price'=>'required|numeric|between:1,1000000000',
+           ],
+           [
+            'name.required'=>'Tên sản phẩm không được để trống',
+            'name.min'=>'Tên sản phẩm quá ngắn',
+          //  'name.alpha'=>'Tên sản phẩm phải là dạng chữ',
+            'price.numeric '=>'Giá tiền phải là dạng số',
+            'price.between'=>'Giá tiền phải lớn hơn 0',
+        ]);
        $product=product::find($request->id);
         $product->name=$request->input('name');
         $product->price=$request->input('price');
         $product->price_sale=$request->input('price_sale');
         $product->description=$request->input('description');
+        $product->images=$request->input('image');
+        $product->quantity=$request->input('quantity');
         $product->category_id=$request->input('category_id');
         $product->save();
         return redirect ('/admin/listProduct')->with('success','Cập nhật sản phẩm thành công');
@@ -60,6 +73,7 @@ class AdminController extends Controller
         $product->price_sale=$request->input('price_sale');
        $product->description=$request->input('description');
        $product->quantity=$request->input('quantity');
+       $product->images=$request->input('image');
        $product->category_id=$request->input('category_id');
 
       //  $product->images=$request->input('image');
